@@ -22,7 +22,7 @@ export function SecurityView() {
   const securityMetrics = [
     {
       label: "Critical Issues",
-      value: "3",
+      value: "4",
       icon: XCircle,
       color: "text-red-600",
       bgColor: "bg-red-100"
@@ -43,7 +43,7 @@ export function SecurityView() {
     },
     {
       label: "Compliant Resources",
-      value: "89%",
+      value: "90%",
       icon: CheckCircle2,
       color: "text-green-600",
       bgColor: "bg-green-100"
