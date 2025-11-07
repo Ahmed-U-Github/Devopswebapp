@@ -50,13 +50,13 @@ export default function App() {
       id: "dashboard" as View,
       name: "Dashboard",
       icon: LayoutDashboard,
-      description: "Overview & metrics"
+      description: "Overview"
     },
     {
       id: "infrastructure" as View,
       name: "Infrastructure",
       icon: Boxes,
-      description: "Manage AWS resources"
+      description: "Manages AWS services"
     },
     {
       id: "pipelines" as View,
