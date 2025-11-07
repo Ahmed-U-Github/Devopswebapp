@@ -154,7 +154,7 @@ export function InfrastructureView() {
       <div className="w-96 border-r bg-gray-50 p-6 overflow-y-auto">
         <div className="mb-6">
           <h2 className="mb-2">AWS Services</h2>
-          <p className="text-gray-600 mb-4">Select a service to configure</p>
+          <p className="text-gray-600 mb-4">Select a AWS service to configure</p>
           
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
