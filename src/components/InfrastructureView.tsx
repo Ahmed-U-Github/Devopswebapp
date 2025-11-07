@@ -34,7 +34,7 @@ const services = [
     id: "lambda",
     icon: Cpu,
     name: "Lambda",
-    description: "Run code without servers",
+    description: "Run code without compute servers",
     category: "Compute"
   },
   {
