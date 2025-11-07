@@ -3,6 +3,7 @@ import { ServiceCard } from "./ServiceCard";
 import { EC2ConfigForm } from "./EC2ConfigForm";
 import { S3ConfigForm } from "./S3ConfigForm";
 import { RDSConfigForm } from "./RDSConfigForm";
+import { ECSConfigForm } from "./ECSConfigForm";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Search, Server, Database, Boxes, Container, Network, Lock, Globe, Cpu, HardDrive, CloudCog, GitBranch } from "lucide-react";
@@ -134,6 +135,8 @@ export function InfrastructureView() {
         return <S3ConfigForm />;
       case "rds":
         return <RDSConfigForm />;
+      case "ecs":
+        return <ECSConfigForm />;
       default:
         return (
           <div className="flex flex-col items-center justify-center h-full text-center p-8">
