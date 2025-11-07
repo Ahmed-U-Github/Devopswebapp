@@ -56,7 +56,7 @@ export default function App() {
       id: "infrastructure" as View,
       name: "Infrastructure",
       icon: Boxes,
-      description: "Manage AWS services"
+      description: "Manages AWS services"
     },
     {
       id: "pipelines" as View,
