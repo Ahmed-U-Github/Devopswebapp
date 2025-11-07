@@ -48,7 +48,7 @@ export function DashboardView() {
     },
     {
       label: "Security Alerts",
-      value: "3",
+      value: "5",
       change: "-2",
       trend: "down",
       icon: AlertTriangle,

@@ -3,6 +3,7 @@ import { ServiceCard } from "./ServiceCard";
 import { EC2ConfigForm } from "./EC2ConfigForm";
 import { S3ConfigForm } from "./S3ConfigForm";
 import { RDSConfigForm } from "./RDSConfigForm";
+import { ECSConfigForm } from "./ECSConfigForm";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Search, Server, Database, Boxes, Container, Network, Lock, Globe, Cpu, HardDrive, CloudCog, GitBranch } from "lucide-react";
@@ -33,7 +34,7 @@ const services = [
     id: "lambda",
     icon: Cpu,
     name: "Lambda",
-    description: "Run code without servers",
+    description: "Run code without compute servers",
     category: "Compute"
   },
   {
@@ -134,6 +135,8 @@ export function InfrastructureView() {
         return <S3ConfigForm />;
       case "rds":
         return <RDSConfigForm />;
+      case "ecs":
+        return <ECSConfigForm />;
       default:
         return (
           <div className="flex flex-col items-center justify-center h-full text-center p-8">
@@ -151,7 +154,7 @@ export function InfrastructureView() {
       <div className="w-96 border-r bg-gray-50 p-6 overflow-y-auto">
         <div className="mb-6">
           <h2 className="mb-2">AWS Services</h2>
-          <p className="text-gray-600 mb-4">Select a service to configure</p>
+          <p className="text-gray-600 mb-4">Select a AWS service to configure</p>
           
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
